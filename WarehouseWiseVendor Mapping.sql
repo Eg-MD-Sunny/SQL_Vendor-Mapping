@@ -8,7 +8,6 @@ select  w.Id [WID],
 		pvp.CachedListPrice [ListPrice],
 		pv.Mrp [MRP]
 
-
 from ThingRequest tr
 join Shipment s on s.Id = tr.ShipmentId 
 join ProductVariant pv on pv.Id = tr.ProductVariantId 
